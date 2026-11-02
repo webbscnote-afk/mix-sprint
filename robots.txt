@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://webbscnote-afk.github.io/mix-sprint/sitemap.xml
