@@ -36,7 +36,6 @@ footer{color:var(--mut);font-size:.85rem;text-align:center;margin:40px 0 20px}
 {"@type":["Person","MusicGroup"],"@id":"https://webbscnote-afk.github.io/mix-sprint/#kingknemicc","name":"KingKnemicC","description":"Kansas City artist with 570+ songs, former welder, and builder of Mix Sprint.","homeLocation":{"@type":"Place","name":"Kansas City"},"sameAs":["https://soundcloud.com/kingknemicc","https://music.amazon.com.au/albums/B0F53BW5NH"]}]}
 </script>
 </head><body>
-<div class="banner">Preview — checkout is in test mode. No real charges.</div>
 <div class="wrap">
 <h1>Your song, <span>loud and finished</span>, without paying for a studio.</h1>
 <p class="lead">Upload your finished mix. Get back a clean, streaming-ready master that hits hard. No studio bill, no waiting on an engineer, and no plugins to learn.</p>
@@ -74,12 +73,12 @@ footer{color:var(--mut);font-size:.85rem;text-align:center;margin:40px 0 20px}
 <h2 id="pricing">Pricing</h2>
 <div class="card launch" style="border:2px solid var(--acc2);text-align:center"><div class="tag" style="color:var(--acc2)">LAUNCH PRICE</div><p style="margin:6px 0;font-weight:700;font-size:1.1rem">Launch price $7.99/song: ends Nov 15. Limited to 20 songs a week.</p><p class="small" style="margin:0">Free redos take real time, so spots are capped. Price goes up after Nov 15.</p></div>
 <div class="card"><div class="tag">ONE SONG</div><div class="price">$7.99</div><p class="small">WAV + MP3 master. Free redo until it's right.</p>
-<a class="btn pay" data-plan="single" href="#">Buy 1 master (test)</a></div>
+<a class="btn pay" data-plan="single" href="#">Buy 1 master</a></div>
 <div class="card"><div class="tag">3-SONG PACK</div><div class="price">$19.99</div><p class="small">$6.66 a song.</p>
-<a class="btn pay" data-plan="pack3" href="#">Buy 3-pack (test)</a></div>
+<a class="btn pay" data-plan="pack3" href="#">Buy 3-pack</a></div>
 <div class="card"><div class="tag after">5-SONG EP: BEST VALUE</div><div class="price">$29.99</div><p class="small">$6 a song. Master the whole EP.</p>
-<a class="btn pay" data-plan="ep5" href="#">Buy EP (test)</a></div>
-<p class="small">Checkout is in Stripe test mode for now. No real charges. All sales final: no refunds, but free redos until it's right.</p>
+<a class="btn pay" data-plan="ep5" href="#">Buy EP</a></div>
+<p class="small">Secure checkout by Stripe. All sales final: no refunds, but free redos until it's right.</p>
 <p class="small">For comparison: LANDR charges $10 per WAV master, and OneMaster charges $9.90 a song.</p>
 
 <h2 id="friend">Bring a friend</h2>
@@ -102,7 +101,7 @@ footer{color:var(--mut);font-size:.85rem;text-align:center;margin:40px 0 20px}
 <footer>Mix Sprint · by KingKnemicC · Kansas City</footer>
 </div>
 <script>
-// Paste Stripe Payment Link URLs here (test mode first).
+// Stripe Payment Link URLs (live).
 const LINKS={single:"https://buy.stripe.com/cNi7sNcvn8ELfED0dt5ZC00",pack3:"https://buy.stripe.com/28EeVf0MF9IPeAz8JZ5ZC01",ep5:"https://buy.stripe.com/eVq3cx9jb6wD3VV5xN5ZC02"}; // Stripe LIVE payment links
 document.querySelectorAll('.pay').forEach(b=>{const u=LINKS[b.dataset.plan];
  if(u){b.href=u;}else{b.setAttribute('aria-disabled','true');b.href='#pricing';
