@@ -102,7 +102,7 @@ footer{color:var(--mut);font-size:.85rem;text-align:center;margin:40px 0 20px}
 </div>
 <script>
 // Paste Stripe Payment Link URLs here (test mode first).
-const LINKS={single:"",pack3:"",ep5:""}; // Stripe TEST payment links go here
+const LINKS={single:"https://buy.stripe.com/cNi7sNcvn8ELfED0dt5ZC00",pack3:"https://buy.stripe.com/28EeVf0MF9IPeAz8JZ5ZC01",ep5:"https://buy.stripe.com/eVq3cx9jb6wD3VV5xN5ZC02"}; // Stripe LIVE payment links
 document.querySelectorAll('.pay').forEach(b=>{const u=LINKS[b.dataset.plan];
  if(u){b.href=u;}else{b.setAttribute('aria-disabled','true');b.href='#pricing';
  b.addEventListener('click',e=>{if(!u){e.preventDefault();alert('Checkout opens soon. This is a preview.');}});}});
